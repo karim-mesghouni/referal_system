@@ -3,14 +3,10 @@
 namespace App\Actions\Auth;
 
 use App\Actions\Other\ProcessReferralAction;
-use App\Enums\Actions;
 use App\Http\Resources\Api\Auth\ClientResource;
-use App\Jobs\ClaimPointsJob;
-use App\Models\Action;
-use App\Models\Point;
+
 use App\Repository\Client\ClientRepository;
-use App\Service\ReferralCodeGenerator;
-use phpDocumentor\Reflection\Types\This;
+
 
 readonly class RegisterAction
 {
