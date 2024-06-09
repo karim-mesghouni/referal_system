@@ -19,8 +19,7 @@ readonly class RegisterAction
     }
     public function __invoke($request)
     {
-        $data = $request->validated();
-        $client = $this->clientRepository->create($data);
+        $client = $this->clientRepository->create($request->validated());
         $token = $client->createToken(env('SECRETE'))->plainTextToken;
         $this->processReferralAction->__invoke($client->id);
         return ["data" => new ClientResource($client), "token" => $token];
