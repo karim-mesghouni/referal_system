@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Referral System! This system is built using the Laravel framework and allows users to refer others to a platform. Referrers can earn rewards based on the successful sign-ups . This README will guide you through the setup, configuration, and usage of the system.
+Welcome to the Simple Referral System! This system is built using the Laravel framework and allows users to refer others to a platform. Referrers can earn rewards based on the successful sign-ups . This README will guide you through the setup, configuration, and usage of the system.
 
 ## Table of Contents
 
