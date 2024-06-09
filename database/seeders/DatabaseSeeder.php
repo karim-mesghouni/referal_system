@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Enums\Actions;
+use App\Models\Action;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,6 +20,16 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+        ]);
+
+        Action::factory()->create([
+            'action' => Actions::Referral->value,
+            'points_awarded' => 10,
+        ]);
+
+        Action::factory()->create([
+            'action' => Actions::Registration->value,
+            'points_awarded' => 10,
         ]);
     }
 }
